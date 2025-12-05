@@ -10,3 +10,9 @@ langchain-groq
 langchain-text-splitters
 sentence-transformers
 spacy
+ipykernel
+PyPDF2
+pdfplumber
+faiss-cpu
+
+
