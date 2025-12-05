@@ -1,0 +1,12 @@
+langchain
+langchain-openai
+openai
+chromadb
+python-dotenv
+langchain-community
+langchain-core
+streamlit
+langchain-groq
+langchain-text-splitters
+sentence-transformers
+spacy
