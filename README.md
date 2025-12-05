@@ -53,3 +53,6 @@ git add .
 ```bash
 git commit -m"folder tree/strcture created and updated requirements.txt file"
 ```
+## git push local chanages to origin from local branch
+
+git push origin main
