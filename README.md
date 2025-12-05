@@ -1,6 +1,34 @@
 # My_First_GenAI_Rag_Based_Project_HR_Policy_Assistant
 
-
+# Project Structure
+```bash
+Clinical-ChatBot-App-MediBuddy/
+│
+├── src/
+│   ├── __init__.py
+│   ├── loaders.py
+│   ├── chunking.py
+│   ├── embeddings.py
+│   ├── vectorstore.py
+│   ├── llm.py
+│   └── rag_pipeline.py
+│
+├── config/
+│   └── config.yaml
+│
+├── data/
+│   └── sample_pdfs/
+│
+├── exploration/
+│   └── notebook.ipynb
+│
+├── Project_Preparation/
+│   └── README.md
+│
+├── .env
+├── requirements.txt
+├── setup.py
+└── app.py
 
 ## Create Folder Structure using templates.py
 
