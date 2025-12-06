@@ -16,16 +16,21 @@ def build_rag_pipeline(pdf_path):
     embeddings = get_embeddings()
     
     file_hash = hash_file(pdf_path)
+
+    # Create a unique directory for the vectorstore based on file hash
     db_dir = f"db/{file_hash}"
 
     # Load cached FAISS if exists ⏩
-    if os.path.exists(db_dir):
-        vector_db = load_vectorstore(embeddings, db_dir)
+    if os.path.exists(db_dir):      # False,True
+        vector_db = load_vectorstore(embeddings, db_dir)  
     else:
+        # Load document
         text = load_document(pdf_path)
+        # Chunking of Document
         docs = split_into_chunks(text)
+        # Embdding and Vectorstore Creation
         vector_db = get_vectorstore(docs, embeddings, db_dir)
-
+    # Retriever and LLM
     retriever = get_retriever(vector_db)
     llm = get_llm()
 

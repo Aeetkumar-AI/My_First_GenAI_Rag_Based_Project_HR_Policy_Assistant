@@ -85,3 +85,9 @@ git commit -m"folder tree/strcture created and updated requirements.txt file"
 ```bash
 git push origin main
 ```
+
+# Azure Deployment
+```bash
+streamlit run app.py --server.port 8000 --server.address 0.0.0.0
+```
+
