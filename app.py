@@ -1,3 +1,5 @@
+# Importing necessary libraries
+# Import Streamlit for web app interface
 import streamlit as st
 from src.rag_pipeline import build_rag_pipeline, ask_question
 
@@ -13,6 +15,7 @@ st.title("Enterprise HR Assistant (RAG-powered)")
 def cached_rag_pipeline(path):
     return build_rag_pipeline(path)
 
+# Provide file uploader for PDF documents
 uploaded_file = st.file_uploader("Upload HR PDF", type=["pdf"])
 
 if uploaded_file:
