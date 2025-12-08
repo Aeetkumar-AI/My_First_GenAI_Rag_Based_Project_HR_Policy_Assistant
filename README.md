@@ -74,13 +74,16 @@ venv\Scripts\deactivate.bat
 git status
 ```
 
+## Track the chages made local 
 ```bash
 git add .
 ```
 
+## Commit changes to git
 ```bash
 git commit -m"folder tree/strcture created and updated requirements.txt file"
 ```
+
 ## git push local chanages to origin from local branch
 ```bash
 git push origin main
